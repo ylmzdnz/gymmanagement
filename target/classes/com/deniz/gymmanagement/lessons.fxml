@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="596.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.deniz.gymmanagement.Lessons">
+   <children>
+      <TableView fx:id="resultList" prefHeight="400.0" prefWidth="433.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="167.0" AnchorPane.topAnchor="0.0">
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <TextField layoutX="437.0" layoutY="50.0" fx:id="title" />
+      <Label layoutX="437.0" layoutY="33.0" text="Title" />
+      <TextField layoutX="437.0" layoutY="104.0" fx:id="ptName" />
+      <Label layoutX="437.0" layoutY="87.0" text="PT Name" />
+      <TextField layoutX="437.0" layoutY="157.0" fx:id="price" />
+      <Label layoutX="437.0" layoutY="140.0" text="Price" />
+      <Button layoutX="468.0" layoutY="251.0" mnemonicParsing="false" text="Add Lesson" onAction="#onAddLesson" />
+   </children>
+</AnchorPane>
